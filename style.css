@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #0c73fe;
+    --white: #ffffff;
+    --black: #070707;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color: var(--blue);
+    color: var(--white);
+    user-select: none;
+}
+
+header {
+    padding: 1% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 40pt;
+}
+
+header ul {
+    font-size: 24pt;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    line-height: 1;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    line-height: 1;
+}
+  
+header li a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--white);
+    content: "";
+    transition: 0.25s ease-out;
+}
+  
+header li a:hover:after,
+header li a:focus:after {
+    width: 100%;
+}
+
+main {
+    text-align: center;
+    padding: 3.5% 0;
+}
+
+main p {
+    font-size: 24pt;
+}
+
+main a button {
+    margin-top: 1%;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 1% 5%;
+    font-size: 28pt;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+main a button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.forms {
+    background-color: var(--white);
+    color: var(--blue);
+    width: 35vw;
+    border-radius: 25px;
+    margin: 3.5% auto;
+    padding: 2% 0 3.5% 0;
+}
+
+.forms a {
+    text-decoration: none;
+    color: var(--blue);
+    position: relative;
+    line-height: 1;
+}
+
+.forms h2 {
+    cursor: pointer;
+}
+
+.forms h2 .selected {
+    font-size: 32pt;
+}
+
+.forms h2 .not-selected {
+    transition: .3s ease;
+}
+
+.forms h2 .not-selected:hover {
+    font-size: 22pt;
+}
+
+form {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form label {
+    font-size: 18pt;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--blue);
+    padding: 1%;
+    font-size: 20pt;
+    outline: none;
+    margin-top: 5%;
+    color: var(--blue);
+    transition: .2s ease;
+}
+
+input:focus {
+    padding: 1.5%;
+}
+
+input::placeholder {
+    color: var(--blue);
+}
+
+input[type="submit"] {
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+input[disabled] {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: auto;
+}
+
+.find-tickets h2 {
+    padding: 1%;
+    font-size: 26pt;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    background-color: var(--white);
+    color: var(--blue);
+    border-radius: 10px;
+}
+  
+#tickets {
+    width: 45%;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--white);
+    color: var(--blue);
+    padding: 2% 0 3% 0;
+    margin-top: 1%;
+}
+  
+.find-tickets form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+select {
+    width: 40%;
+    font-size: 16pt;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 1%;
+}
+  
+select::-webkit-scrollbar {
+    display: none;
+}
+
+.find-tickets form img {
+    height: 48px;
+    width: 32px;
+}
+  
+.find-tickets  input[type="date"] {
+    width: 40%;
+    font-size: 16pt;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 1%;
+    margin-top: 2%;
+}
+
+header a button {
+    background-color: transparent;
+    padding: 1%;
+    border: 2px solid var(--white);
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 16pt;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+header a button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.profile {
+    padding: 1.5%;
+}
+
+.profile h1 {
+    font-size: 36pt;
+}
+
+.profile h2 {
+    margin-top: 1%;
+}
+
+.tickets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.ticket {
+    width: 48vw;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 18pt;
+    padding: 2%;
+    text-align: justify;
+}

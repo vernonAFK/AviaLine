@@ -1,3 +1,3 @@
 <?php
-setcookie("username", null, -300);
+setcookie("username", null, -10800);
 header('Location: index.php');

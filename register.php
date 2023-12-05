@@ -18,6 +18,6 @@ $sql = "SELECT * FROM `users` WHERE login = '$login'";
 $result = $conn->query($sql);
 
 while ($row = $result->fetch_assoc()) {
-    setcookie("username", $row['login'], time() + 300);
+    setcookie("username", $row['login'], time() + 10800);
     header('Location: profile.php');
 }

@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АвиаЛайн &mdash; поиск и покупка авиабилетов</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1 title="АвиаЛайн">АвиаЛайн</h1>
-
         <ul>
             <li>
                 <a href="login_page.php"><img src="img/user.png" alt="">
@@ -27,7 +25,6 @@
             </li>
         </ul>
     </header>
-
     <main>
         <p>Поиск дешёвых авиабилетов тут</p>
         <p>↓</p>
